@@ -3,15 +3,16 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.mrzhu.netty</groupId>
+        <artifactId>netty-examples</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
 
-    <groupId>com.mrzhu.netty</groupId>
-    <artifactId>netty-examples</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <artifactId>nio-examples</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>discard-server</module>
-        <module>time-server</module>
-        <module>nio-examples</module>
+        <module>file-channel</module>
     </modules>
 
     <properties>
@@ -19,13 +20,5 @@
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-
-    <dependencies>
-        <dependency>
-            <groupId>io.netty</groupId>
-            <artifactId>netty-all</artifactId>
-            <version>4.2.9.Final</version>
-        </dependency>
-    </dependencies>
 
 </project>
